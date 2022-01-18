@@ -1,0 +1,266 @@
+* {
+    list-style: none;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.broder-right-left {
+    border-right: 1px solid;
+    padding: 0 10px;
+    border-left: 1px solid;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+}
+
+:root {
+    --white: #fff;
+    --footer-col: #d9b04c;
+    --grey: #6c757d;
+    --service-icon: #FF214F;
+}
+
+.header-menu ul li a,
+.menu-icon-cl a i {
+    color: white;
+}
+
+.carousel-item img {
+    object-fit: cover;
+}
+
+.broder-left {
+    padding-left: 10px;
+    border-left: 1px solid;
+}
+
+.image-background {
+    filter: brightness(50%);
+}
+
+.carousel-caption h2 {
+    font-size: 64px;
+    padding: 0 100px;
+}
+
+
+/* ******************* about ***************** */
+
+.about {
+    padding: 100px 0;
+}
+
+.about-left h3 {
+    opacity: 0.9;
+    font-size: 52px;
+}
+
+.about-left p {
+    opacity: 0.7;
+}
+
+.about-left button {
+    font-size: 18px;
+    padding: 12px 24px;
+    font-weight: 700;
+}
+
+.about-left button:hover {
+    transform: translateY(-4px);
+    transition: 0.4s;
+    box-shadow: 0 .25rem .75rem rgba(18, 18, 19, 0.15);
+    color: var(--white);
+}
+
+.about-right {
+    position: relative;
+}
+
+.about-right::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    background-image: radial-gradient(#3f78e0 2px, transparent 2.5px);
+    height: 100px;
+    width: 100px;
+    opacity: 0.5;
+}
+
+.about-right::after {
+    content: '';
+    position: absolute;
+    bottom: -40px;
+    right: -12%;
+    width: 90%;
+    height: 90%;
+    background-color: #f1f5fd!important;
+    border-radius: .4rem!important;
+    z-index: -1;
+}
+
+
+/* service -------------------------*/
+
+.service {
+    padding: 100px 0;
+}
+
+.service-icon i {
+    height: 80px;
+    width: 80px;
+    background-color: var(--service-icon);
+    font-size: 32px;
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: middle;
+    color: var(--white);
+}
+
+.service p {
+    font-size: 14px;
+    color: #6f6f6f;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.service-title h2 {
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.service-title p {
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+
+/* ********************footer***************** */
+
+footer {
+    background-image: url(../image/footer-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    color: #c5c5c5;
+}
+
+.footer {
+    padding: 100px 0;
+}
+
+footer h4 {
+    color: var(--footer-col);
+}
+
+footer ul li a {
+    color: #c5c5c5;
+}
+
+footer h4::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    left: 110%;
+    top: 55%;
+    background-color: var(--footer-col);
+}
+
+.subscribe-footer form a i {
+    background-color: var(--footer-col);
+    position: absolute;
+    right: 3%;
+    top: 9%;
+    padding: 6px 6px;
+    border-radius: 50%;
+}
+
+.subscribe-footer {
+    background-color: #114045;
+    border-radius: 7px;
+    padding: 30px 25px;
+}
+
+.subscribe-footer input {
+    font-size: 12px;
+}
+
+footer ul li a {
+    font-size: 18px;
+}
+
+.footer-bottom {
+    border-top: 1px solid var(--grey);
+    width: 100%;
+    z-index: 999;
+}
+
+.footer ul li :hover {
+    color: var(--footer-col);
+}
+
+.footer ul li:hover {
+    transform: translateX(10px);
+    transition: 0.5s;
+}
+
+
+/* ////// topbar //////// */
+
+.topbar-arrow {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    padding: 9px 15px;
+    border-radius: 50%;
+    background-color: var(--footer-col);
+}
+
+.topbar-arrow a {
+    color: var(--white);
+}
+
+
+/* //////////////////////////////////////   hover-------------------------------- */
+
+.carousel-caption button:hover {
+    color: black !important;
+}
+
+
+/* ---------------------------- media ////////////////////////////////////////--/ */
+
+@media(max-width:768px) {
+    .navbar-toggler {
+        margin: 15px;
+    }
+    .carousel-caption h2 {
+        font-size: 32px !important;
+        padding: 0 40px !important;
+    }
+    .about {
+        padding: 0;
+    }
+}
+
+@media(max-width:991px) {
+    .broder-right-left {
+        border-left: none;
+    }
+    .broder-right-left {
+        border-left: 1px solid;
+        border-right: 0;
+    }
+    .carousel-caption h2 {
+        font-size: 46px !important;
+        padding: 0 50px !important;
+    }
+}
